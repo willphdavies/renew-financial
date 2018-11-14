@@ -83,7 +83,7 @@
     "start": "npm run build && npm run serve-dev",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "mocha:server": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register --recursive ./tests/**/*.js --colors --require ./tests/index.js",
+    "mocha:server": "cross-env NODE_ENV=test mocha --recursive ./tests/**/*.js --colors --require babel-core/register --require ./tests/setup.js",
     "build-server": " mv server/tsconfig.json . && tsc && mv tsconfig.json server/",
     "serve-dev": "ts-node --project ./server/tsconfig.json ./server/server.ts",
     "serve": "nodemon ./dist/server.js",
