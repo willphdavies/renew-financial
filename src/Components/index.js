@@ -1,5 +1,4 @@
 import { LoanReducer, LoanLocalEn } from "./Loan"
-import { merge } from 'lodash'
 
 export { AppHeader, AppFooter } from "./Page"
 export { Loan } from "./Loan"
