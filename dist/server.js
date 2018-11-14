@@ -5,4 +5,5 @@ const PORT = 8080;
 app_1.default.listen(PORT, () => {
     console.log('Express server listening on port ' + PORT);
 });
+exports.default = app_1.default;
 //# sourceMappingURL=server.js.map
